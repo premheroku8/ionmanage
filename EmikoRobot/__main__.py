@@ -83,17 +83,18 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 *👋🏻 ʜᴇʟʟᴏ {} *
-ᴍʏ ɴᴀᴍᴇ ɪꜱ ᴢᴏɪᴅ [✨](https://telegra.ph/file/e49a96b35cc9d4dc8a213.jpg)
+ᴍʏ ɴᴀᴍᴇ ɪꜱ ʜɪɴᴀᴛᴀ [✨](https://telegra.ph/file/3c653399fb5dad3e68d5c.jpg)
 ᴍᴇ ɪꜱ ᴀ ʙᴏᴛ ᴍᴀɴᴀɢᴇʀ + ᴍᴜꜱɪᴄ ᴛᴏ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴡᴇʟʟ.
 ────────────────────────
-× `{}` *ᴜꜱᴇʀꜱ, ᴀᴄʀᴏꜱꜱ* `{}` *ᴄʜᴀᴛꜱ.*
+◈ *ᴜᴘᴛɪᴍᴇ:* `{}`
+◈ ᴛᴇʟᴀʜ ᴅɪɢᴜɴᴀᴋᴀɴ  `{}` *ᴘᴇɴɢɢᴜɴᴀ, ᴅɪ * `{}` *ɢʀᴏᴜᴘ*
 ────────────────────────
 ᴛᴇᴋᴀɴ /help ᴜɴᴛᴜᴋ ᴍᴇʟɪʜᴀᴛ ᴅᴀꜰᴛᴀʀ ᴘᴇʀɪɴᴛᴀʜ ʏᴀɴɢ ᴛᴇʀꜱᴇᴅɪᴀ.
 """
 
 buttons = [
     [
-        InlineKeyboardButton(text="ᴀʙᴏᴜᴛ ᴢᴏɪᴅ", callback_data="emiko_"),
+        InlineKeyboardButton(text="ᴀʙᴏᴜᴛ ʜɪɴᴀᴛᴀ", callback_data="emiko_"),
     ],
     [
         InlineKeyboardButton(text="ʜᴇʟᴘ", callback_data="help_back"),
@@ -103,13 +104,13 @@ buttons = [
     ],
     [
         InlineKeyboardButton(
-            text="ᴛᴀᴍʙᴀʜᴋᴀɴ ᴢᴏɪᴅ", url=f"t.me/{bu}?startgroup=new"),
+            text="ᴛᴀᴍʙᴀʜᴋᴀɴ ʜɪɴᴀᴛᴀ", url=f"t.me/{bu}?startgroup=new"),
     ],
 ]
 
 
 HELP_STRINGS = """
-Klik tombol di bawah ini untuk mendapatkan deskripsi tentang fitur manage bot Zoid.
+Klik tombol di bawah ini untuk mendapatkan deskripsi tentang fitur manage bot Hinata.
 
 ✪ /start : Mulai Aku!! ✨
 ✪ /help : Perintah Untuk Membantu Anda
@@ -426,14 +427,14 @@ def emiko_about_callback(update, context):
         )
     elif query.data == "emiko_support":
         query.message.edit_text(
-            text="*๏ Zoid support chats*"
+            text="*๏ Hinata support chats*"
             f"\nJoin My Support Group/Channel for see or report a problem on {dispatcher.bot.first_name}.",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", url="t.me/ZoidsXRobotLog"),
-                    InlineKeyboardButton(text="ᴜᴘᴅᴀᴛᴇs", url="https://t.me/ImZo_0"),
+                    InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ", url="t.me/ZennXSupport"),
+                    InlineKeyboardButton(text="ᴜᴘᴅᴀᴛᴇs", url="https://t.me/deliciousmilk"),
                  ],
                  [
                     InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="emiko_"),
