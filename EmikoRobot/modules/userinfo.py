@@ -353,9 +353,9 @@ def info(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                "Health", url="https://t.me/ZoidsXRobotLog"),
+                                "Health", url="https://t.me/deliciousmilk"),
                             InlineKeyboardButton(
-                                "Disaster", url="https://t.me/ZoidsXRobotLog")
+                                "Disaster", url="https://t.me/deliciousmilk")
                         ],
                     ]
                 ),
@@ -445,9 +445,9 @@ def set_about_me(update: Update, context: CallbackContext):
 
 @sudo_plus
 def stats(update: Update, context: CallbackContext):
-    stats = "<b>╔═━「 Current Zoids Statistics 」</b>\n" + "\n".join([mod.__stats__() for mod in STATS])
+    stats = "<b>╔═━「 Current Hinata Statistics 」</b>\n" + "\n".join([mod.__stats__() for mod in STATS])
     result = re.sub(r"(\d+)", r"<code>\1</code>", stats)
-    result += "\n<b>╘═━「 Powered By Zoids Robot 」</b>"
+    result += "\n<b>╘═━「 Powered By Hinata Robot 」</b>"
     update.effective_message.reply_text(
         result,
         parse_mode=ParseMode.HTML, 
