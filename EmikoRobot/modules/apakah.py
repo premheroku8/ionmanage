@@ -24,7 +24,7 @@ async def apakah(event):
         return
     await event.reply(random.choice(APAKAH_STRING))
     
-    import random
+import random
 from EmikoRobot.events import register
 from EmikoRobot import telethn
 
@@ -48,5 +48,5 @@ async def apakah(event):
     if not quew:
         await event.reply('Berikan saya pertanyaan 😐')
         return
-    await event.reply(random.choice(APAKAH_STRING))
+    await event.reply(random.choice(KAPAN_STRING))
 
