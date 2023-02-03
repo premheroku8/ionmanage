@@ -75,3 +75,29 @@ async def apakah(event):
         await event.reply('Berikan saya pertanyaan 😐')
         return
     await event.reply(random.choice(DIMANA_STRING))
+
+import random
+from EmikoRobot.events import register
+from EmikoRobot import telethn
+
+KENAPA_STRING = ["Gatau", 
+                 "Ntahlah", 
+                 "Karena because tidak pernah never", 
+                 "Bodoamat", 
+                 "Apasih wibu nanya nanya", 
+                 "Tanya orang lain aja",
+                 "Pikir sendiri aja",
+                 "Karna aku mencintai bapakmu",
+                 "Tanya google aja ya",
+                 "Tanya orang lain aja ya",
+                 "Karna lo wibu"
+                 ]
+
+
+@register(pattern="^/apakah ?(.*)")
+async def apakah(event):
+    quew = event.pattern_match.group(1)
+    if not quew:
+        await event.reply('Mana pertanyaan nya tod')
+        return
+    await event.reply(random.choice(KENAPA_STRING))
