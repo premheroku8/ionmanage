@@ -94,7 +94,7 @@ KENAPA_STRING = ["Gatau",
                  ]
 
 
-@register(pattern="^/apakah ?(.*)")
+@register(pattern="^/kenapa ?(.*)")
 async def apakah(event):
     quew = event.pattern_match.group(1)
     if not quew:
