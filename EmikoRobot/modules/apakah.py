@@ -50,3 +50,28 @@ async def apakah(event):
         return
     await event.reply(random.choice(KAPAN_STRING))
 
+import random
+from EmikoRobot.events import register
+from EmikoRobot import telethn
+
+DIMANA_STRING = ["Dimana mana hatiku senang", 
+                 "Di rumah kali", 
+                 "Kepo banget luhk", 
+                 "Di jonggol", 
+                 "Di rumah bapak lo", 
+                 "Ya mana gue tau anj",
+                 "Di goa",
+                 "Di mana hayo?",
+                 "Di rumah ku",
+                 "Di jalanan",
+                 "Dimana hayo kamu kepo yaa"
+                 ]
+
+
+@register(pattern="^/dimana ?(.*)")
+async def apakah(event):
+    quew = event.pattern_match.group(1)
+    if not quew:
+        await event.reply('Berikan saya pertanyaan 😐')
+        return
+    await event.reply(random.choice(DIMANA_STRING))
