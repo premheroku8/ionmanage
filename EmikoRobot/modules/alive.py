@@ -16,9 +16,9 @@ async def awake(event):
   TEXT = f"**Hi [{event.sender.first_name}](tg://user?id={event.sender.id}), ᴀᴋᴜ ʏᴜɪɪ ʀᴏʙᴏᴛ.** \n\n"
   TEXT += "✘ **ᴀᴋᴜ ʜɪᴅᴜᴘ ᴅᴀɴ ᴀᴋᴜ ɴʏᴀᴛᴀ** \n\n"
   TEXT += f"✘ **ᴍʏ ʟᴏʀᴅ : [ ʏᴜɪɪ](https://t.me/onlybionn)** \n\n"
-  TEXT += f"✘ **Library Version :** `{telever}` \n\n"
-  TEXT += f"✘ **Telethon Version :** `{tlhver}` \n\n"
-  TEXT += f"✘ **Pyrogram Version :** `{pyrover}` \n\n"
-  TEXT += "**Thanks For Adding Me Here 🔥**"
+  TEXT += f"✘ **ʟɪʙʀᴀʀʏ ᴠᴇʀsɪᴏɴ :** `{telever}` \n\n"
+  TEXT += f"✘ **ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ :** `{tlhver}` \n\n"
+  TEXT += f"✘ **ᴘʏʀᴏɢʀᴀᴍ ᴠᴇʀsɪᴏɴ :** `{pyrover}` \n\n"
+  TEXT += "**ᴛᴇʀɪᴍᴀᴋᴀsɪʜ sᴜᴅᴀʜ ᴍᴇɴᴀᴍʙᴀʜᴋᴀɴ ᴋᴜ ᴅɪ sɪɴɪ 🔥**"
   BUTTON = [[Button.url("ʜᴇʟᴘ", "https://t.me/YuiichiroManage_Bot?start=help"), Button.url("ᴜᴘᴅᴀᴛᴇ", "https://t.me/zennihhh")]]
   await tbot.send_file(event.chat_id, PHOTO, caption=TEXT,  buttons=BUTTON)
