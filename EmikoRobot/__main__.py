@@ -430,7 +430,7 @@ def emiko_about_callback(update, context):
             "\n • /authusers - Periksa DAFTAR AUTH grup",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="⭅ ᴋᴇᴍʙᴀʟɪ", callback_data="emiko_")]]
+                [[InlineKeyboardButton(text="⭅ ᴋᴇᴍʙᴀʟɪ", callback_data="emiko_support")]]
             ),
         )
     elif query.data == "emiko_notes":
@@ -445,7 +445,7 @@ def emiko_about_callback(update, context):
             "\n\n • /queue or /cqueue- Periksa Daftar Antrian Musik",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="⭅ ᴋᴇᴍʙᴀʟɪ", callback_data="emiko_")]]
+                [[InlineKeyboardButton(text="⭅ ᴋᴇᴍʙᴀʟɪ", callback_data="emiko_support")]]
             ),
         )
     elif query.data == "emiko_support":
@@ -460,7 +460,7 @@ def emiko_about_callback(update, context):
                     InlineKeyboardButton(text="🤖ᴍᴀɴᴀɢᴇ", callback_data="help_back"),
                  ],
                  [
-                    InlineKeyboardButton(text="🔙 ᴋᴇᴍʙᴀʟɪ", callback_data="emiko_back"),
+                    InlineKeyboardButton(text="🔙 ᴋᴇᴍʙᴀʟɪ", callback_data="source_back"),
                  
                  ]
                 ]
@@ -494,7 +494,7 @@ def emiko_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="🔙 ᴋᴇᴍʙᴀʟɪ", callback_data="emiko_")
+                    InlineKeyboardButton(text="🔙 ᴋᴇᴍʙᴀʟɪ", callback_data="emiko_support")
                  ]
                 ]
             ),
@@ -523,7 +523,7 @@ def Source_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="🔙 ᴋᴇᴍʙᴀʟɪ", callback_data="emiko_")
+                    InlineKeyboardButton(text="🔙 ᴋᴇᴍʙᴀʟɪ", callback_data="emiko_support")
                  ]
                 ]
             ),
