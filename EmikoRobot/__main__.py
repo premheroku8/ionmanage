@@ -105,13 +105,14 @@ buttons = [
             text="📣 ᴄʜᴀɴɴᴇʟ", url="t.me/zennihhh"
         ),
     ],
-  ]
+    [
         InlineKeyboardButton(text="❓ʙᴀɴᴛᴜᴀɴ", callback_data="emiko_support"
         ),
         InlineKeyboardButton(
             text="👨‍💻 ᴏᴡɴᴇʀ", url="t.me/onlybionn"
         )
-],
+     ],
+]
 HELP_STRINGS = """
 Klik tombol di bawah ini untuk mendapatkan deskripsi tentang fitur manage bot Yuii.
 
