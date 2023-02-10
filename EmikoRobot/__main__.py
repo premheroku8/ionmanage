@@ -105,7 +105,7 @@ buttons = [
             text="📣 ᴄʜᴀɴɴᴇʟ", url="t.me/zennihhh"
         ),
     ],
-[
+  ]
         InlineKeyboardButton(text="❓ʙᴀɴᴛᴜᴀɴ", callback_data="emiko_support"
         ),
         InlineKeyboardButton(
