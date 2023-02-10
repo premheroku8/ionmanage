@@ -287,7 +287,7 @@ async def _(event):
         await memeks.edit("Asupannya gaada komsol")  
 
 
-__mod_name__ = "Asupan"
+__mod_name__ = "ᴀꜱᴜᴘᴀɴ"
 
 __help__ = """
 🎥 Special Video
