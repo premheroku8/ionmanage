@@ -24,29 +24,29 @@ async def carbon_func(_, message):
     carbon.close()
 
 
-MEMEK = "https://telegra.ph/file/3c653399fb5dad3e68d5c.jpg"
+MEMEK = "https://telegra.ph/file/7f8647c8016634aae1d42.jpg"
 
 @pbot.on_message(filters.command("repo"))
 async def repo(_, message):
     await message.reply_photo(
         photo=MEMEK,
-        caption=f"""✨ **Hey I'm Hinata Robot** 
+        caption=f"""✨ **ʜᴀɪɪ ᴀᴋᴜ ʏᴜɪɪ ʀᴏʙᴏᴛ** 
 
-**Owner repo : [bella](https://t.me/milkfortunate)**
-**Python Version :** `{y()}`
-**Library Version :** `{o}`
-**Telethon Version :** `{s}`
-**Pyrogram Version :** `{z}`
+**ᴍʏ ʟᴏʀᴅ : [Yuii](https://t.me/onlyybionn)**
+**ᴘʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ :** `{y()}`
+**ʟɪʙʀᴀʀʏ ᴠᴇʀsɪᴏɴ :** `{o}`
+*ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ* :** `{s}`
+**ᴘʏʀᴏɢʀᴀᴍ ᴠᴇʀsɪᴏɴ :** `{z}`
 
-**Create your own with click button bellow.**
+**ᴊᴀɴ ʟᴜᴘᴀ ᴄᴇᴋ ᴅɪ ʙᴀᴡᴀʜ ɪɴɪ ʏᴀ ᴋᴀᴋ!.**
 """,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "ʀᴇᴘᴏ", url="https://github.com"), 
+                        "ᴜᴘᴅᴀᴛᴇ", url="https://github.com"), 
                     InlineKeyboardButton(
-                        "sᴜᴘᴘᴏʀᴛ", url="https://t.me/deliciousmilk")
+                        "sᴜᴘᴘᴏʀᴛ", url="https://t.me/YuiichiroManage_Bot")
                 ]
             ]
         )
