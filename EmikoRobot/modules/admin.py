@@ -486,7 +486,7 @@ def refresh_admin(update, _):
     except KeyError:
         pass
 
-    update.effective_message.reply_text("✅ Admins cache refreshed!")
+    update.effective_message.reply_text("✅ *Admin List Updated*\n✅ *Bot Restarted!*")
 
 
 @connection_status
@@ -967,31 +967,30 @@ def bug_reporting(update: Update, _: CallbackContext):
 
 
 __help__ = """
-*User Commands*:
-❂ /admins*:* list of admins in the chat
-❂ /pinned*:* to get the current pinned message.
-
-*The Following Commands are Admins only:* 
-❂ /pin*:* silently pins the message replied to - add `'loud'` or `'notify'` to give notifs to users
-❂ /unpin*:* unpins the currently pinned message
-❂ /invitelink*:* gets invitelink
-❂ /promote*:* promotes the user replied to
-❂ /fullpromote*:* promotes the user replied to with full rights
-❂ /demote*:* demotes the user replied to
-❂ /title <title here>*:* sets a custom title for an admin that the bot promoted
-❂ /admincache*:* force refresh the admins list
-❂ /del*:* deletes the message you replied to
-❂ /purge*:* deletes all messages between this and the replied to message.
-❂ /purge <integer X>*:* deletes the replied message, and X messages following it if replied to a message.
-❂ /setgtitle <text>*:* set group title
-❂ /setgpic*:* reply to an image to set as group photo
-❂ /setdesc*:* Set group description
-❂ /setsticker*:* Set group sticker
-
-*Rules*:
-❂ /rules*:* get the rules for this chat.
-❂ /setrules <your rules here>*:* set the rules for this chat.
-❂ /clearrules*:* clear the rules for this chat.
+*Perintah Pengguna*:
+❂ /admins*:* daftar admin di chat
+❂ /pinned*:* untuk mendapatkan pesan yang disematkan saat ini.
+*Perintah Berikut hanya Admin:*
+❂ /pin*:* secara diam-diam menyematkan pesan yang dibalas - tambahkan `'loud'` atau `'notify'` 
+untuk memberikan notifikasi kepada pengguna
+❂ /unpin*:* melepas pin pesan yang sedang disematkan
+❂ /invitelink*:* mendapat invitelink
+❂ /promote*:* mempromosikan pengguna membalas
+❂ /fullpromote*:* mempromosikan pengguna yang dibalas dengan hak penuh
+❂ /demote*:* menurunkan pengguna yang dibalas
+❂ /title <title here>*:* menetapkan judul khusus untuk admin yang dipromosikan bot
+❂ /reload*:* paksa refresh daftar admin
+❂ /del*:* menghapus pesan yang Anda balas
+❂ /purge*:* menghapus semua pesan antara ini dan pesan yang dibalas.
+❂ /purge <integer X>*:* menghapus pesan yang dibalas, dan X pesan yang mengikutinya jika membalas pesan.
+❂ /setgtitle <text>*:* atur judul grup
+❂ /setgpic*:* membalas gambar untuk ditetapkan sebagai foto grup
+❂ /setdesc*:* Setel deskripsi grup
+/setsticker*:* Setel stiker grup
+*Aturan*:
+❂ /rules*:* dapatkan aturan untuk obrolan ini.
+❂ /setrules <aturan Anda di sini>*:* tetapkan aturan untuk obrolan ini.
+❂ /clearrules*:* hapus aturan chat ini.
 """
 
 SET_DESC_HANDLER = CommandHandler("setdesc", set_desc, filters=Filters.chat_type.groups, run_async=True)
@@ -1015,7 +1014,7 @@ LOW_PROMOTE_HANDLER = DisableAbleCommandHandler("lowpromote", lowpromote, run_as
 DEMOTE_HANDLER = DisableAbleCommandHandler("demote", demote, run_async=True)
 
 SET_TITLE_HANDLER = CommandHandler("title", set_title, run_async=True)
-ADMIN_REFRESH_HANDLER = CommandHandler("admincache", refresh_admin, filters=Filters.chat_type.groups, run_async=True)
+ADMIN_REFRESH_HANDLER = CommandHandler("reload", refresh_admin, filters=Filters.chat_type.groups, run_async=True)
 
 dispatcher.add_handler(SET_DESC_HANDLER)
 dispatcher.add_handler(SET_STICKER_HANDLER)
@@ -1049,7 +1048,7 @@ __command_list__ = [
     "fullpromote",
     "lowpromote",
     "demote", 
-    "admincache"
+    "reload"
 ]
 __handlers__ = [
     SET_DESC_HANDLER,
@@ -1062,7 +1061,6 @@ __handlers__ = [
     UNPIN_HANDLER,
     PINNED_HANDLER,
     INVITE_HANDLER,
-    BUG_HANDLER,
     PROMOTE_HANDLER,
     FULLPROMOTE_HANDLER,
     LOW_PROMOTE_HANDLER,
