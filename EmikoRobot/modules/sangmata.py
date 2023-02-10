@@ -6,7 +6,6 @@ from asyncio.exceptions import TimeoutError
 
 
 @register(pattern="^/sg ?(.*)")
-@register(pattern="^/check_name ?(.*)")
 async def lastname(steal):
     steal.pattern_match.group(1)
     puki = await steal.reply("```Retrieving Such User Information..```")
@@ -31,7 +30,7 @@ async def lastname(steal):
                 response = await conv.get_response()
             except YouBlockedUserError:
                 await steal.reply(
-                    "```Error, report to @kenbotsupport```"
+                    "```Error, report to @ZennXSupport```"
                 )
                 return
             if r.text.startswith("Name"):
