@@ -35,7 +35,7 @@ async def repo(_, message):
 **ᴍʏ ʟᴏʀᴅ : [Yuii](https://t.me/onlyybionn)**
 **ᴘʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ :** `{y()}`
 **ʟɪʙʀᴀʀʏ ᴠᴇʀsɪᴏɴ :** `{o}`
-*ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ* :** `{s}`
+*ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ :** `{s}`
 **ᴘʏʀᴏɢʀᴀᴍ ᴠᴇʀsɪᴏɴ :** `{z}`
 
 **ᴊᴀɴ ʟᴜᴘᴀ ᴄᴇᴋ ᴅɪ ʙᴀᴡᴀʜ ɪɴɪ ʏᴀ ᴋᴀᴋ!.**
@@ -44,9 +44,9 @@ async def repo(_, message):
             [
                 [
                     InlineKeyboardButton(
-                        "ᴜᴘᴅᴀᴛᴇ", url="https://github.com"), 
+                        "ᴜᴘᴅᴀᴛᴇ", url="https://zennihhh"), 
                     InlineKeyboardButton(
-                        "sᴜᴘᴘᴏʀᴛ", url="https://t.me/YuiichiroManage_Bot")
+                        "sᴜᴘᴘᴏʀᴛ", url="https://t.me/YuiiSupportChat")
                 ]
             ]
         )
