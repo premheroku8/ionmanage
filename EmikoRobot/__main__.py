@@ -95,7 +95,7 @@ PM_START_TEXT = """
 buttons = [
     [
         InlineKeyboardButton(
-            text="➗ ᴛᴀᴍʙᴀʜᴋᴀɴ ʏᴜᴄʜɪʀᴏ ᴋᴇ ɢʀᴏᴜᴘ ➗", url="t.me/YuiichiroManagr_Bot?startgroup=true"
+            text="➗ ᴛᴀᴍʙᴀʜᴋᴀɴ ʏᴜᴄʜɪʀᴏ ᴋᴇ ɢʀᴏᴜᴘ ➗", url="t.me/YuiichiroManage_Bot?startgroup=true"
         ),
     ],    
     [   
