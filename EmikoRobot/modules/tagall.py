@@ -15,7 +15,7 @@ spam_chats = []
 async def mentionall(event):
     chat_id = event.chat_id
     if event.is_private:
-        return await event.respond("__This command can be use in groups and channels!__")
+        return await event.respond("Perintah ini dapat digunakan dalam group dan channel")
 
     is_admin = False
     try:
@@ -37,10 +37,10 @@ async def mentionall(event):
         ):
             is_admin = True
     if not is_admin:
-        return await event.reply("__Only admins can mention all!__")
+        return await event.reply("Hanya admin yang bisa mention semua!")
 
     if event.pattern_match.group(1) and event.is_reply:
-        return await event.reply("__Give me one argument!__")
+        return await event.reply("Beri aku satu argumen!")
     elif event.pattern_match.group(1):
         mode = "text_on_cmd"
         msg = event.pattern_match.group(1)
@@ -49,9 +49,9 @@ async def mentionall(event):
         msg = await event.get_reply_message()
         if msg == None:
             return await event.respond(
-                "__I can't mention members for older messages! (messages which are sent before I'm added to group)__")
+                "Saya tidak bisa menyebut anggota untuk pesan lama! (pesan yang dikirim sebelum sayan ditambahkan ke group)")
     else:
-        return await event.reply("__Reply to a message or give me some text to mention others!__")
+        return await event.reply("Membalas pesan atau memberi saya beberapa teks untuk menyebutkan orang lain!")
 
     spam_chats.append(chat_id)
     usrnum = 0
@@ -60,7 +60,7 @@ async def mentionall(event):
         if not chat_id in spam_chats:
             break
         usrnum += 1
-        usrtxt += f"[{usr.first_name}](tg://user?id={usr.id}), "
+        usrtxt += f"👤 [{usr.first_name}](tg://user?id={usr.id})\n"
         if usrnum == 5:
             if mode == "text_on_cmd":
                 txt = f"{msg}\n{usrtxt}"
@@ -98,9 +98,9 @@ async def cancel_spam(event):
         ):
             is_admin = True
     if not is_admin:
-        return await event.reply("__Only admins can execute this command!__")
+        return await event.reply("Hanya admin yang dapat menjalankan perintah ini!")
     if not event.chat_id in spam_chats:
-        return await event.reply("__There is no proccess on going...__")
+        return await event.reply("Tidak ada proses!")
     else:
         try:
             spam_chats.remove(event.chat_id)
@@ -113,10 +113,10 @@ __mod_name__ = "Tag all"
 __help__ = """
 ──「 Mention all func 」──
 
-Emiko Can Be a Mention Bot for your group.
+Yuii Dapat Menjadi Mention Bot untuk grup Anda.
 
-Only admins can tag all.  here is a list of commands
+Hanya admin yang dapat menandai semua. di sini adalah daftar perintah
 
-❂ /tagall or @all (reply to message or add another message) To mention all members in your group, without exception.
-❂ /cancel for canceling the mention-all.
+❂ /tagall atau @all (membalas pesan atau menambahkan pesan lain) Untuk menyebut semua anggota di grup Anda, tanpa kecuali.
+❂ /cancel untuk membatalkan mention-all.
 """
