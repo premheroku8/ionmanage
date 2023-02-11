@@ -390,7 +390,7 @@ def emiko_about_callback(update, context):
                 ]
             ),
         )
-    elif query.data == "emiko_back":
+    elif query.data == "source_back":
         first_name = update.effective_user.first_name
         uptime = get_readable_time((time.time() - StartTime))
         query.message.edit_text(
@@ -460,7 +460,7 @@ def emiko_about_callback(update, context):
                     InlineKeyboardButton(text="🤖ᴍᴀɴᴀɢᴇ", callback_data="help_back"),
                  ],
                  [
-                    InlineKeyboardButton(text="🔙 ᴋᴇᴍʙᴀʟɪ", callback_data="emiko_back"),
+                    InlineKeyboardButton(text="🔙 ᴋᴇᴍʙᴀʟɪ", callback_data="source_back"),
                  
                  ]
                 ]
