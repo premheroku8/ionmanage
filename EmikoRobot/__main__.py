@@ -390,7 +390,7 @@ def emiko_about_callback(update, context):
                 ]
             ),
         )
-    elif query.data == "source_back":
+    elif query.data == "emiko_back":
         first_name = update.effective_user.first_name
         uptime = get_readable_time((time.time() - StartTime))
         query.message.edit_text(
