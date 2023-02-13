@@ -195,7 +195,7 @@ async def _(event):
         pantek = await ubot2.download_media(kontols)
         await tbot.send_file(
             event.chat.id, 
-            caption="Tiktok FYP video by Hinata Robot", 
+            caption="Tiktok FYP video by Yuii Robot", 
             file=pantek
             )
         await memeks.delete()
